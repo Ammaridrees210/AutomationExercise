@@ -1,0 +1,23 @@
+{
+  "initialreq":{
+    "name":"Ammar",
+    "emailInitial": "Ammar",
+    "emailDomain":"@gmail.com"  
+  },
+  "signform":{
+    "password": "121212",
+    "day": "6",
+    "months": "5",
+    "years": "1997",
+    "first_name": "Ammar",
+    "last_name": "Idrees",
+    "company": "SprintSynergy",
+    "address": "House#121, P.O no 122, Sprintsynergy, near BISE sargodha",
+    "address2": "House#121, P.O no 122, Sprintsynergy, near BISE sargodha",
+    "country": "Canada",
+    "state": "punjab",
+    "city": "Sargodha",
+    "zipcode":"40100",
+    "mobile_number": "0315601107"
+  }
+}
