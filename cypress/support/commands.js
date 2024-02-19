@@ -29,3 +29,6 @@ Cypress.Commands.add('clickLink', (label) =>{
 Cypress.Commands.add('clickButton', (label) =>{
     cy.get('button').contains(label).click()
 })
+Cypress.Commands.add('createAccount', (label) =>{
+    cy.get('button').contains(label).click()
+})

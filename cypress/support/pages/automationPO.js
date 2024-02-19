@@ -1,6 +1,5 @@
 class automation {
     navigateToSignup(){
-        cy.get('.left-sidebar').contains('Category')
         cy.clickLink(' Signup / Login')
     }
     initialreq(randomNumber, generateString, data){
@@ -26,6 +25,7 @@ class automation {
         cy.get('[data-qa="city"]').type(`${data.city}`)
         cy.get('[data-qa="zipcode"]').type(`${data.zipcode}`)
         cy.get('[data-qa="mobile_number"]').type(`${data.mobile_number}`)
+        cy.createAccount('create-account')
 
     }
 }
