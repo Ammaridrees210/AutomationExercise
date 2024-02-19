@@ -1,13 +1,12 @@
 class automation {
     navigateToSignup(){
-        cy.get('a').contains(' Signup / Login').click();
+        cy.get('.left-sidebar').contains('Category')
+        cy.clickLink(' Signup / Login')
     }
-    initialreq(randomNumber, data){
-        // const email = faker.internet.email();
+    initialreq(randomNumber, generateString, data){
         cy.get('[data-qa="signup-name"]').type(`${data.name}`)
-        cy.get('[data-qa="signup-email"]').type(`${data.emailInitial}+${randomNumber}${data.emailDomain}`)
-        // cy.get('[data-qa="signup-email"]').type(email)
-        cy.get('[data-qa="signup-button"]').click()
+        cy.get('[data-qa="signup-email"]').type(`${generateString}+${randomNumber}${data.emailDomain}`)
+        cy.clickButton('Signup')
     }
     signform(data){
         cy.get('[type="radio"]').first().check()

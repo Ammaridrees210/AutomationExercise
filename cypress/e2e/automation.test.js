@@ -1,21 +1,25 @@
-import automation from "../pages/automationPO"
+import automation from "../support/pages/automationPO"
 // @ts-ignore
-import randomNumber from "../pages/commonPO"
-const obj1 = new automation()
+import {randomNumber, generateString} from "../support/pages/commonPO"
+const test = new automation()
 
 describe('search signup/login button', () => {
     it('should search signup/login button', () => {
         cy.visit('/')
         //BaseUrl Call from cypress.Config
-        obj1.navigateToSignup()
+        test.navigateToSignup()
         //User navigate to website
         
         cy.fixture('example.json').then((data) =>{
             //init the Fixture data
-        obj1.initialreq(randomNumber(), data.initialreq)
+            cy.get('[class="signup-form"] h2').contains('New User Signup!')
+        test.initialreq(randomNumber(), generateString(), data.initialreq)
         //Passing function and Fixture data 
 
-        obj1.signform(data.signform)
+
+        cy.get('[class="title text-center"] b').contains('Enter Account Information')
+        test.signform(data.signform)
+
         
         })
 

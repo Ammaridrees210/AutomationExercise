@@ -1,7 +1,6 @@
 {
   "initialreq":{
     "name":"Ammar",
-    "emailInitial": "Ammar",
     "emailDomain":"@gmail.com"  
   },
   "signform":{
@@ -18,6 +17,6 @@
     "state": "punjab",
     "city": "Sargodha",
     "zipcode":"40100",
-    "mobile_number": "0315601107"
+    "mobile_number": "4545455454547"
   }
 }
