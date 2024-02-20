@@ -18,5 +18,11 @@
     "city": "Sargodha",
     "zipcode":"40100",
     "mobile_number": "4545455454547"
+  },
+  "HomePageAfterSignUp":{
+  },
+  "logincredentials":{
+    "email":"link@gmail.com",
+    "loginPassword":"121212"
   }
 }
