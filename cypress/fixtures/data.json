@@ -1,9 +1,9 @@
 {
-  "initialreq":{
-    "name":"Ammar",
-    "emailDomain":"@gmail.com"  
+  "initialreq": {
+    "name": "Ammar",
+    "emailDomain": "@gmail.com"
   },
-  "signform":{
+  "signform": {
     "password": "121212",
     "day": "6",
     "months": "5",
@@ -16,13 +16,16 @@
     "country": "Canada",
     "state": "punjab",
     "city": "Sargodha",
-    "zipcode":"40100",
+    "zipcode": "40100",
     "mobile_number": "4545455454547"
   },
-  "HomePageAfterSignUp":{
+  "logincredentials": {
+    "email": "link@gmail.com",
+    "loginPassword": "121212"
   },
-  "logincredentials":{
-    "email":"link@gmail.com",
-    "loginPassword":"121212"
+  "wrongcredentials":{
+    "email":"link",
+    "loginPassword": "121212"
+
   }
 }
